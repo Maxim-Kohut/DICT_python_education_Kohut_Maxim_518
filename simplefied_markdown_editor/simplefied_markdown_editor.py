@@ -53,8 +53,8 @@ def format_list(formatter):
         num_rows = int(num_rows)
         if num_rows > 0:
             result = []
-            for i in range(1, num_rows + 1):
-                item = input(f"Row #{i}: > ")
+            for i in range(1, num_rows + 1): # Цей рядок використовує цикл for для ітерації по діапазону значень, визначеному функцією range(1, num_rows + 1).
+                item = input(f"Row #{i}: > ")# range(), яка може бути ітератором.
                 if formatter == "ordered-list":
                     result.append(str(i) + ". " + item)
                 else:
